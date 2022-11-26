@@ -12,14 +12,6 @@ export class BarrasComponent implements OnInit {
   
   public barChartOptions: ChartOptions = {
     responsive: true,
-
-    scales: { xAxes: [{}], yAxes: [{}] },
-    plugins: {
-      datalabels:{
-        anchor: 'end',
-        align: 'end'
-      }
-    }
   };
   public barChartLabels: Label[] = ['2020', '2021', '2022', '2023', '2024', '2025', '2026'];
   public barChartType: ChartType = 'bar';
@@ -28,7 +20,7 @@ export class BarrasComponent implements OnInit {
   public barChartData: ChartDataSets[] = [
     { data: [ 65, 59, 80, 81, 56, 55, 40 ], label: 'Series A', backgroundColor: '#ED5F76', hoverBackgroundColor: 'red' },
     { data: [ 28, 48, 40, 19, 86, 27, 90 ], label: 'Series B', backgroundColor: '#F763C4', hoverBackgroundColor: 'red' },
-    { data: [ 37, 52, 60, 25, 33, 57, 70 ], label: 'Series C', backgroundColor: '#F763C4', hoverBackgroundColor: 'red' }
+    { data: [ 37, 52, 60, 25, 33, 57, 70 ], label: 'Series C', backgroundColor: '#3124D1', hoverBackgroundColor: 'red' }
   ];
 
 
